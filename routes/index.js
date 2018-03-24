@@ -1,4 +1,4 @@
 module.exports = {
-    apiRoutes: require("./api/dbController"),
+    apiRoutes: require("./api/apiController"),
     viewRoutes: require("./view/viewController")
 };

@@ -1,0 +1,30 @@
+.main-content {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/lcd.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-text{
+    
+    margin-top: 10%;
+    padding: 5%;
+    color: white;
+    border: 5px solid white;
+}
+
+#title{
+    font-weight: bold;
+}
+
+#saved-link {
+   text-decoration: none;
+   display: inline-block;
+   position: relative;
+}
+
+#saved-link:hover {
+    color: white;
+    text-decoration: line-through;
+}
