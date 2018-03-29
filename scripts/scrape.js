@@ -21,7 +21,7 @@ const scraper = {
                         db.Article.create(result).then((dbArticle) => {
                             console.log(dbArticle);
                         }).catch((err) => {
-                            return res.json(err);
+                            return err;
                         });
 
                     });

@@ -6,8 +6,8 @@ $(document).ready(() => {
             method: "GET",
             url: "/api/scrape"
         }).then((response)=>{
-            console.log(response);
-            //window.location = "/saved";
         });
     });
+
+    $('')
 });
