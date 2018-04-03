@@ -55,4 +55,17 @@ router.post("/api/:id", (req, res) => {
 
 });
 
+router.post("/api/save/:id", function(req, res){
+    Article.findOneAndUpdate({"_id": req.params.id}, {"saved": true})
+    .exec(function(err, doc){
+        if(err){
+            console.log(err);
+        }
+        else{
+            res.send(doc);
+        }
+    });
+});
+
+
 module.exports = router;
